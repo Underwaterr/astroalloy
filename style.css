@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Cooper Hewitt Bold";
+  src: url("cooper-hewitt-heavy.otf");
+}
+
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url("libre-baskerville-regular.otf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html { 
+  font-size: 16px; 
+  max-width: 768px;
+}
+
+::selection {
+  background: white;
+  color: #38383d;
+}
+
+body {
+  margin: 2rem;
+  padding: 0;
+  line-height: 1;
+  font-family: "Libre Baskerville";
+  background-color: #38383d;
+  color: #ffffff;
+}
+
+h1 {
+  margin: 0;
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-family: "Cooper Hewitt Bold";
+  font-weight: normal;
+}
+
+h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-family: "Cooper Hewitt Bold";
+  font-weight: normal;
+  text-transform: capitalize;
+  font-variant-caps: small-caps;
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a {
+  color: #00feff;
+}
+
+nav li + li::before {
+  white-space:pre;
+  content: " | ";
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
